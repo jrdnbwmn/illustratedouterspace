@@ -1,0 +1,121 @@
+// Base styles
+// -------------------------------------------------------------------
+// Default styling, appliable to sections or specific elements
+.default-links a,
+.default-links a:link,
+.default-links a:visited,
+.link,
+.link:link,
+.link:visited {
+    color: $link-color;
+    text-decoration: underline;
+    transition: color $fade;
+}
+
+.default-links a:hover,
+.default-links a:focus,
+.link:hover,
+.link:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+}
+
+.default-links a:active,
+.link:active {
+    background-image: none;
+    color: $active-link-color;
+    outline: 0;
+    transition: color $fade;
+}
+
+// Text link
+.text-link,
+.text-link:link,
+.text-link:visited {
+    color: $text-color;
+    text-decoration: none;
+    transition: color $fade;
+}
+
+.text-link:hover,
+.text-link:focus {
+    color: $link-color;
+    text-decoration: none;
+}
+
+.text-link:active {
+    background-image: none;
+    color: $link-color;
+    outline: 0;
+    transition: color $fade;
+}
+
+// Block link
+.block-link,
+.block-link:link,
+.block-link:visited {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border-color: #fff;
+}
+
+.block-link:hover,
+.block-link:focus {
+    color: inherit;
+    text-decoration: none;
+    background: $shadow;
+}
+
+.block-link:active {
+    background: $shadow;
+    background-image: none;
+    color: inherit;
+    outline: 0;
+}
+
+.block-link {
+    @media screen and (max-width: $breakpoint--sm) {
+        margin-bottom: $space-1;
+    }
+}
+
+// Text link
+.text-link--on-change,
+.text-link--on-change:link,
+.text-link--on-change:visited {
+    color: $text-color;
+    text-decoration: none;
+}
+
+.text-link--on-change:hover,
+.text-link--on-change:focus {
+    color: $text-color;
+    text-decoration: none;
+}
+
+.text-link--on-change:active {
+    background-image: none;
+    color: $text-color;
+    outline: 0;
+}
+
+// Text link
+.text-link--white,
+.text-link--white:link,
+.text-link--white:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.text-link--white:hover,
+.text-link--white:focus {
+    color: $link-color;
+    text-decoration: none;
+}
+
+.text-link--white:active {
+    background-image: none;
+    color: $link-color;
+    outline: 0;
+}

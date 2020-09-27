@@ -1,0 +1,16 @@
+// Base embed styles
+// -------------------------------------------------------------------
+// Make stuff responsive
+img, canvas, iframe, video, svg { max-width: 100%; }
+
+.shadow-box {
+    width: 545px;
+    padding-bottom: 75.27%;
+    max-width: 100%;
+
+    @media screen and (max-width: $breakpoint--sm) {
+        display: none;
+    }
+}
+
+.icon-line-reset { margin-top: -9px; }
